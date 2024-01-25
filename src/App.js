@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import szpitalImage from './szpital.jpg';
 
 function App() {
+  const textStyle = {
+    fontSize: 30,
+    textTransform: 'uppercase',
+    color: 'blue', // Set your desired color
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p style={textStyle}>Wracaj do zdrowia Maja</p>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <p>napewno nie jedziesz tam</p>
+      <img src={szpitalImage} alt="Szpital" />
     </div>
   );
 }
+
+
 
 export default App;
